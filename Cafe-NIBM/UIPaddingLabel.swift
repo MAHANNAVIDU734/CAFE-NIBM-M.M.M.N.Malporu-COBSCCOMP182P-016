@@ -19,12 +19,5 @@ class UIPaddingLabel: UILabel {
         return CGSize(width: size.width + 2 * padding,
                       height: size.height + 2 * padding)
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }

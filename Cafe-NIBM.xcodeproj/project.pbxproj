@@ -24,6 +24,13 @@
 		476F05A525F4D30B00143508 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05A425F4D30B00143508 /* LoginViewController.swift */; };
 		476F05AA25F4D3C700143508 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05A925F4D3C700143508 /* LocationViewController.swift */; };
 		476F05AF25F4D6F500143508 /* ThankyouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05AE25F4D6F500143508 /* ThankyouViewController.swift */; };
+		476F05CE25F4F37F00143508 /* FoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05CD25F4F37F00143508 /* FoodScreen.swift */; };
+		476F05D325F4F5F200143508 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05D225F4F5F200143508 /* FoodList.swift */; };
+		476F05DF25F4F74300143508 /* PendingOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05DE25F4F74300143508 /* PendingOrderCell.swift */; };
+		476F05E425F4F81C00143508 /* FoodCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05E325F4F81C00143508 /* FoodCategoryList.swift */; };
+		476F05E925F4F87200143508 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05E825F4F87200143508 /* FoodCategoryCell.swift */; };
+		476F05EE25F4FB9900143508 /* FoodSmallDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05ED25F4FB9900143508 /* FoodSmallDetailCell.swift */; };
+		476F05F325F5062700143508 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05F225F5062700143508 /* SignUpViewController.swift */; };
 		962CA45D3DF5A7A2CFCFED2C /* Pods_Cafe_NIBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9787B9B08692C9D442E7023 /* Pods_Cafe_NIBM.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +76,13 @@
 		476F05A425F4D30B00143508 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		476F05A925F4D3C700143508 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		476F05AE25F4D6F500143508 /* ThankyouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankyouViewController.swift; sourceTree = "<group>"; };
+		476F05CD25F4F37F00143508 /* FoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodScreen.swift; sourceTree = "<group>"; };
+		476F05D225F4F5F200143508 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
+		476F05DE25F4F74300143508 /* PendingOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOrderCell.swift; sourceTree = "<group>"; };
+		476F05E325F4F81C00143508 /* FoodCategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryList.swift; sourceTree = "<group>"; };
+		476F05E825F4F87200143508 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
+		476F05ED25F4FB9900143508 /* FoodSmallDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSmallDetailCell.swift; sourceTree = "<group>"; };
+		476F05F225F5062700143508 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		62BBBFEA3C51A5E3E2F05F15 /* Pods-Cafe-NIBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe-NIBM.debug.xcconfig"; path = "Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM.debug.xcconfig"; sourceTree = "<group>"; };
 		A9787B9B08692C9D442E7023 /* Pods_Cafe_NIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe_NIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,6 +154,13 @@
 				476F05A425F4D30B00143508 /* LoginViewController.swift */,
 				476F05A925F4D3C700143508 /* LocationViewController.swift */,
 				476F05AE25F4D6F500143508 /* ThankyouViewController.swift */,
+				476F05CD25F4F37F00143508 /* FoodScreen.swift */,
+				476F05D225F4F5F200143508 /* FoodList.swift */,
+				476F05DE25F4F74300143508 /* PendingOrderCell.swift */,
+				476F05E325F4F81C00143508 /* FoodCategoryList.swift */,
+				476F05E825F4F87200143508 /* FoodCategoryCell.swift */,
+				476F05ED25F4FB9900143508 /* FoodSmallDetailCell.swift */,
+				476F05F225F5062700143508 /* SignUpViewController.swift */,
 			);
 			path = "Cafe-NIBM";
 			sourceTree = "<group>";
@@ -354,15 +375,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476F05D325F4F5F200143508 /* FoodList.swift in Sources */,
+				476F05EE25F4FB9900143508 /* FoodSmallDetailCell.swift in Sources */,
 				476F05A525F4D30B00143508 /* LoginViewController.swift in Sources */,
 				476F049225F343B500143508 /* ViewController.swift in Sources */,
 				476F059B25F4D0DD00143508 /* UIPaddingLabel.swift in Sources */,
+				476F05CE25F4F37F00143508 /* FoodScreen.swift in Sources */,
+				476F05F325F5062700143508 /* SignUpViewController.swift in Sources */,
 				476F059025F4B95600143508 /* RoundButton.swift in Sources */,
+				476F05DF25F4F74300143508 /* PendingOrderCell.swift in Sources */,
+				476F05E925F4F87200143508 /* FoodCategoryCell.swift in Sources */,
 				476F048E25F343B500143508 /* AppDelegate.swift in Sources */,
 				476F05AA25F4D3C700143508 /* LocationViewController.swift in Sources */,
 				476F049825F343B500143508 /* Cafe_NIBM.xcdatamodeld in Sources */,
 				476F059625F4CEA800143508 /* FoodDetailScreen.swift in Sources */,
 				476F05A025F4D14600143508 /* FoodDetail.swift in Sources */,
+				476F05E425F4F81C00143508 /* FoodCategoryList.swift in Sources */,
 				476F049025F343B500143508 /* SceneDelegate.swift in Sources */,
 				476F05AF25F4D6F500143508 /* ThankyouViewController.swift in Sources */,
 			);
