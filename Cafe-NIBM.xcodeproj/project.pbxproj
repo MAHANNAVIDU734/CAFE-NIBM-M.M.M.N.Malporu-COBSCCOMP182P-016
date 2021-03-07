@@ -173,8 +173,6 @@
 				476F060B25F53BDC00143508 /* PendingOrderList.swift */,
 				476F061825F53EB000143508 /* OrderListController.swift */,
 				476F061D25F5409800143508 /* PendingOrderCell.swift */,
-				476F062225F5413300143508 /* Reciept.swift */,
-				476F062725F5418800143508 /* OrderStatus.swift */,
 				476F062C25F541E600143508 /* OrderCell.swift */,
 			);
 			path = "Cafe-NIBM";
@@ -201,6 +199,8 @@
 		476F060325F53A0A00143508 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				476F062725F5418800143508 /* OrderStatus.swift */,
+				476F062225F5413300143508 /* Reciept.swift */,
 				476F059F25F4D14600143508 /* FoodDetail.swift */,
 				476F060425F53A6400143508 /* DateFormattingScreen.swift */,
 				476F061025F53C7400143508 /* PendingOrder.swift */,
