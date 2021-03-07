@@ -9,5 +9,6 @@ target 'Cafe-NIBM' do
   pod 'Firebase/Firestore'
   pod 'SkeletonView'
   pod 'Firebase/Storage'
+  pod 'SPPermissions/Location'
 
 end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,13 @@
 		476F04A825F343B900143508 /* Cafe_NIBMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F04A725F343B900143508 /* Cafe_NIBMTests.swift */; };
 		476F04B325F343B900143508 /* Cafe_NIBMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F04B225F343B900143508 /* Cafe_NIBMUITests.swift */; };
 		476F04C425F346AD00143508 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 476F04C325F346AD00143508 /* GoogleService-Info.plist */; };
+		476F059025F4B95600143508 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F058F25F4B95600143508 /* RoundButton.swift */; };
+		476F059625F4CEA800143508 /* FoodDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F059525F4CEA800143508 /* FoodDetailScreen.swift */; };
+		476F059B25F4D0DD00143508 /* UIPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F059A25F4D0DD00143508 /* UIPaddingLabel.swift */; };
+		476F05A025F4D14600143508 /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F059F25F4D14600143508 /* FoodDetail.swift */; };
+		476F05A525F4D30B00143508 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05A425F4D30B00143508 /* LoginViewController.swift */; };
+		476F05AA25F4D3C700143508 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05A925F4D3C700143508 /* LocationViewController.swift */; };
+		476F05AF25F4D6F500143508 /* ThankyouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05AE25F4D6F500143508 /* ThankyouViewController.swift */; };
 		962CA45D3DF5A7A2CFCFED2C /* Pods_Cafe_NIBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9787B9B08692C9D442E7023 /* Pods_Cafe_NIBM.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +62,13 @@
 		476F04B225F343B900143508 /* Cafe_NIBMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe_NIBMUITests.swift; sourceTree = "<group>"; };
 		476F04B425F343B900143508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		476F04C325F346AD00143508 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		476F058F25F4B95600143508 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		476F059525F4CEA800143508 /* FoodDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailScreen.swift; sourceTree = "<group>"; };
+		476F059A25F4D0DD00143508 /* UIPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPaddingLabel.swift; sourceTree = "<group>"; };
+		476F059F25F4D14600143508 /* FoodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
+		476F05A425F4D30B00143508 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		476F05A925F4D3C700143508 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		476F05AE25F4D6F500143508 /* ThankyouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankyouViewController.swift; sourceTree = "<group>"; };
 		62BBBFEA3C51A5E3E2F05F15 /* Pods-Cafe-NIBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe-NIBM.debug.xcconfig"; path = "Target Support Files/Pods-Cafe-NIBM/Pods-Cafe-NIBM.debug.xcconfig"; sourceTree = "<group>"; };
 		A9787B9B08692C9D442E7023 /* Pods_Cafe_NIBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe_NIBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +133,13 @@
 				476F049B25F343B800143508 /* LaunchScreen.storyboard */,
 				476F049E25F343B800143508 /* Info.plist */,
 				476F049625F343B500143508 /* Cafe_NIBM.xcdatamodeld */,
+				476F058F25F4B95600143508 /* RoundButton.swift */,
+				476F059525F4CEA800143508 /* FoodDetailScreen.swift */,
+				476F059A25F4D0DD00143508 /* UIPaddingLabel.swift */,
+				476F059F25F4D14600143508 /* FoodDetail.swift */,
+				476F05A425F4D30B00143508 /* LoginViewController.swift */,
+				476F05A925F4D3C700143508 /* LocationViewController.swift */,
+				476F05AE25F4D6F500143508 /* ThankyouViewController.swift */,
 			);
 			path = "Cafe-NIBM";
 			sourceTree = "<group>";
@@ -147,7 +168,6 @@
 				62BBBFEA3C51A5E3E2F05F15 /* Pods-Cafe-NIBM.debug.xcconfig */,
 				14DB8F3D7CE948AE2F12CA02 /* Pods-Cafe-NIBM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -334,10 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476F05A525F4D30B00143508 /* LoginViewController.swift in Sources */,
 				476F049225F343B500143508 /* ViewController.swift in Sources */,
+				476F059B25F4D0DD00143508 /* UIPaddingLabel.swift in Sources */,
+				476F059025F4B95600143508 /* RoundButton.swift in Sources */,
 				476F048E25F343B500143508 /* AppDelegate.swift in Sources */,
+				476F05AA25F4D3C700143508 /* LocationViewController.swift in Sources */,
 				476F049825F343B500143508 /* Cafe_NIBM.xcdatamodeld in Sources */,
+				476F059625F4CEA800143508 /* FoodDetailScreen.swift in Sources */,
+				476F05A025F4D14600143508 /* FoodDetail.swift in Sources */,
 				476F049025F343B500143508 /* SceneDelegate.swift in Sources */,
+				476F05AF25F4D6F500143508 /* ThankyouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

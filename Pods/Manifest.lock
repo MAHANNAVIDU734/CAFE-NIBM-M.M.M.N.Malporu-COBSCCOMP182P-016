@@ -308,12 +308,16 @@ PODS:
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
   - SkeletonView (1.13.0)
+  - SPPermissions/Core (5.4.1)
+  - SPPermissions/Location (5.4.1):
+    - SPPermissions/Core
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
   - SkeletonView
+  - SPPermissions/Location
 
 SPEC REPOS:
   trunk:
@@ -334,6 +338,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - SkeletonView
+    - SPPermissions
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -353,7 +358,8 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SkeletonView: 2b14cb767a7da384d17d5d7e1db0d55a6cf9566a
+  SPPermissions: a093e8045c7aeb23a08acda6d288e3543f27f8fa
 
-PODFILE CHECKSUM: 75629b5947dca7caf15f6ce3e9f4191dd14c51e9
+PODFILE CHECKSUM: 0f64e3c76a046735c323cded17fa16d86313a091
 
 COCOAPODS: 1.10.1
