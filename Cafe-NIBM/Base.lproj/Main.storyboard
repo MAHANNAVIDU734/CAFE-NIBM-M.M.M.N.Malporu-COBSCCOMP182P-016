@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-2022" y="56"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="q27-9S-Ekh">
             <objects>
-                <viewController id="7s6-Tl-m0b" sceneMemberID="viewController">
+                <viewController id="7s6-Tl-m0b" customClass="SignUpViewController" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QN4-iu-MsN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,11 +138,17 @@
                                 <rect key="frame" x="25" y="229" width="364" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="email:forEvent:" destination="BuJ-uw-6ON" eventType="editingDidEnd" id="5VY-ou-BT9"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36K-vl-RZq">
                                 <rect key="frame" x="25" y="273" width="364" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="mobile:forEvent:" destination="BuJ-uw-6ON" eventType="editingDidEnd" id="NVp-Lo-2AK"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-Td-I9L">
                                 <rect key="frame" x="25" y="317" width="364" height="34"/>
@@ -202,8 +208,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="npf-q2-f1Q"/>
+                    <connections>
+                        <outlet property="confirmpassword" destination="rET-ZY-Wiw" id="kah-La-HUg"/>
+                        <outlet property="password" destination="yfK-Td-I9L" id="95k-jf-DFV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctS-AG-JZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="BuJ-uw-6ON" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1261" y="56"/>
         </scene>
@@ -734,7 +745,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="QwO-FS-OLM"/>
+        <segue reference="pWk-Ub-Rop"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="location_icon" width="771.1300048828125" height="701.83001708984375"/>

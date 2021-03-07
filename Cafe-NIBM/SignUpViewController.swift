@@ -11,10 +11,15 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
-    @IBOutlet weak var email: UITextField!
+    
+    @IBOutlet weak var email:
+        UITextField!
+   
     @IBOutlet weak var mobile: UITextField!
+    
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var confirmpass: UITextField!
+   
+    @IBOutlet weak var confirmpassword: UITextField!
     
     
     
@@ -83,7 +88,7 @@ func passwordValidate(_ spassword: String) -> Bool
             return
         }
         
-        if (confirmpass.text != password.text)
+        if (confirmpassword.text != password.text)
         {
             let alert = UIAlertController(title: "Error", message: "Password mismatch", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
@@ -91,7 +96,7 @@ func passwordValidate(_ spassword: String) -> Bool
             return
         }
         
-        if confirmpass.text?.isEmpty == true
+        if confirmpassword.text?.isEmpty == true
         {
             let alert = UIAlertController(title: "Error", message: "Please confirm your password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
@@ -110,7 +115,7 @@ func passwordValidate(_ spassword: String) -> Bool
         }
         
         
-       Auth.auth().createUser(withEmail: email.text!, password: spassword.text!) { (authResult, error) in
+       Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
         
             if let error = error as NSError?
             {
