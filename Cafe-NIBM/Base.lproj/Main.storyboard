@@ -282,7 +282,7 @@
         <!--Food List-->
         <scene sceneID="x1K-ix-hx7">
             <objects>
-                <viewController title="Food List" id="Xvg-4A-6Ud" customClass="FoodDetailScreen" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Food List" id="Xvg-4A-6Ud" customClass="FoodScreen" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OTv-Lu-V1v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,7 +311,7 @@
                                     <constraint firstItem="g1T-on-NQs" firstAttribute="top" secondItem="xhB-5a-Byh" secondAttribute="top" id="q9A-Gb-QBA"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2XP-MZ-qj3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2XP-MZ-qj3" customClass="PendingOrderList" customModule="Cafe_NIBM">
                                 <rect key="frame" x="10" y="76.5" width="394" height="120"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -429,7 +429,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o2d-m4-SFs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o2d-m4-SFs" customClass="FoodList" customModule="Cafe_NIBM" customModuleProvider="target">
                                 <rect key="frame" x="10" y="243.5" width="394" height="515.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -554,7 +554,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="Foodname" destination="3nV-h6-wmT" id="paj-l9-swO"/>
+                        <outlet property="PendingOrderList" destination="2XP-MZ-qj3" id="UII-de-hie"/>
                         <outlet property="Promotions" destination="YwQ-Gs-P6K" id="LXz-k6-bU1"/>
+                        <outlet property="activeOrderList" destination="2XP-MZ-qj3" id="QxQ-7X-CpO"/>
                         <outlet property="foodDescription" destination="Qqn-UX-GY5" id="KtE-F7-mwI"/>
                         <outlet property="price" destination="2yg-dj-aPd" id="Nkj-5N-sWf"/>
                     </connections>

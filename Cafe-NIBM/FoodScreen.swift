@@ -20,7 +20,7 @@ class FoodScreen: UIViewController {
     let imageStore = Storage.storage()
     
    @IBAction func onOrdered(_ sender: Any) {
-    let activeOrderScreen = tabBarController!.viewControllers![1] as! OrderListController
+    let activeOrderScreen = tabBarController!.viewControllers![1] as!OrderListController
         activeOrderScreen.newOrderToAdded = activeOrderList.data
         activeOrderList.resetList()
         tabBarController?.selectedViewController = activeOrderScreen
@@ -87,7 +87,7 @@ class FoodScreen: UIViewController {
         activeOrderList.heightConstraint = heightContraint
         super.viewDidLoad()
         foodList.onItemSelected = {selectedDetail in
-            let detailScreen = self.storyboard?.instantiateViewController(identifier: "foodDetailScreen") as! FullFoodDetailScreen
+            let detailScreen = self.storyboard?.instantiateViewController(identifier: "foodDetailScreen") as! FoodDetailScreen
             detailScreen.foodDetail = selectedDetail
             detailScreen.onOrderedRecieved = {
                 self.activeOrderList.addOrder(foodDetail: selectedDetail)
