@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PendingOrderCell: UITableViewCell {
+class PendingOrder: UITableView {
 
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemPrice: UILabel!

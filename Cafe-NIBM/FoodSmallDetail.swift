@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FoodSmallDetailCell: UITableViewCell {
+class FoodSmallDetail: UITableView {
 
     @IBOutlet weak var promotion: UIPaddingLabel!
     @IBOutlet weak var foodDescription: UILabel!
