@@ -12,13 +12,10 @@ import FirebaseAuth
 class SignUpViewController: UIViewController {
     
     
-    @IBOutlet weak var email:
-        UITextField!
-   
-    @IBOutlet weak var mobile: UITextField!
     
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var mobilenumber: UITextField!
     @IBOutlet weak var password: UITextField!
-   
     @IBOutlet weak var confirmpassword: UITextField!
     
     
@@ -27,11 +24,10 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func btnSignup(_ sender: Any)
-    {
-        
+    
+    @IBAction func btnSignup(_ sender: Any) {
         Signup()
-        
+    
     }
     
     
@@ -53,8 +49,7 @@ func passwordValidate(_ spassword: String) -> Bool
     func Signup()
         
     {
-       
-        if !emailValidate(email.text!)
+       if !emailValidate(email.text!)
         {
             let alert = UIAlertController(title: "Error", message: "Enter a valid Email", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
@@ -105,7 +100,7 @@ func passwordValidate(_ spassword: String) -> Bool
             return
         }
         
-        if mobile.text?.isEmpty == true
+        if mobilenumber.text?.isEmpty == true
         {
             let alert = UIAlertController(title: "Error", message: "Please Enter Correct Phone Number", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
