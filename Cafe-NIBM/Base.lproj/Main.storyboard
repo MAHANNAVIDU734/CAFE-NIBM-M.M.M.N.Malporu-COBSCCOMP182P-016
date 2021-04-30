@@ -38,19 +38,14 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TdN-34-bE3">
                                 <rect key="frame" x="25" y="232.5" width="364" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AH-ku-gQ4">
-                                <rect key="frame" x="25" y="286.5" width="364" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuN-Ef-Lcb">
                                 <rect key="frame" x="220" y="370.5" width="144" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Forget Password??"/>
                                 <connections>
-                                    <action selector="btnForgetpassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceS-vb-D8v"/>
+                                    <action selector="btnForgetpassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Og-Y5-sv0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaO-6b-3am">
@@ -72,9 +67,12 @@
                                 <rect key="frame" x="100" y="576" width="214" height="30"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <state key="normal" title="Joing the CAFE-NIBM"/>
+                                <attributedString key="userComments">
+                                    <fragment content="Signup"/>
+                                </attributedString>
                                 <connections>
-                                    <action selector="btnJoinwithCAFENIBM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AF-GJ-hQO"/>
-                                    <segue destination="7s6-Tl-m0b" kind="show" id="g7p-82-lZB"/>
+                                    <action selector="btnJoinwithCAFENIBM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lx-cm-D5j"/>
+                                    <segue destination="7s6-Tl-m0b" kind="show" id="Jr5-5u-oTp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Member Yet ??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-fk-E8L">
@@ -83,6 +81,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AH-ku-gQ4">
+                                <rect key="frame" x="25" y="286.5" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,7 +126,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="q27-9S-Ekh">
             <objects>
-                <viewController id="7s6-Tl-m0b" customClass="SignUpViewController" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="7s6-Tl-m0b" customClass="SignUpViewController" customModule="Cafe_NIBM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QN4-iu-MsN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -762,6 +765,7 @@
                                 <rect key="frame" x="50" y="472" width="314" height="30"/>
                                 <state key="normal" title="Show Permission"/>
                                 <connections>
+                                    <action selector="btnShowPermission:" destination="vhY-to-bBO" eventType="touchUpInside" id="nEg-eh-xYv"/>
                                     <segue destination="sVY-K6-Dwh" kind="show" id="EbN-DV-PbP"/>
                                 </connections>
                             </button>

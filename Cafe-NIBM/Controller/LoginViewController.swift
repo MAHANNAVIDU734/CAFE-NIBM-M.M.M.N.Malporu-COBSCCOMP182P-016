@@ -27,16 +27,19 @@ class LoginViewController: UIViewController {
         log()
     }
     
+    
     @IBAction func btnForgetpassword(_ sender: Any) {
         ForgetPassword()
     }
     
     
+    
     @IBAction func btnJoinwithCAFENIBM(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "SignUp")
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+               // let vc = storyboard.instantiateViewController(identifier: "SignUp")
+                //vc.modalPresentationStyle = .overFullScreen
+                //present(vc, animated: true)
+        
     }
     func log()
     {

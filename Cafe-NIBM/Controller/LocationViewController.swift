@@ -14,13 +14,12 @@ class LocationViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func btnShowPermission(_ sender: Any)
-    {
+    
+    @IBAction func btnShowPermission(_ sender: Any) {
         let controller = SPPermissions.dialog([.locationWhenInUse])
-        
-        controller.titleText = "Location permission"
-        controller.present(on: self)
-        
+                
+                controller.titleText = "Location permission"
+                controller.present(on: self)
     }
     func deniedData(for permission: SPPermission) -> SPPermissionDeniedAlertData? {
         if permission == .notification {

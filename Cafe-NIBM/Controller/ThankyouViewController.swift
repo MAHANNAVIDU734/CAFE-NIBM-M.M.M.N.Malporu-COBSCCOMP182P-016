@@ -18,10 +18,10 @@ class ThankyouViewController: UIViewController {
     @IBAction func btnClicktoLogin(_ sender: Any) {
     
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "Login")
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(identifier: "Login")
+//        vc.modalPresentationStyle = .overFullScreen
+//        present(vc, animated: true)
         
     }
     
