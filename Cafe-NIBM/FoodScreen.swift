@@ -11,7 +11,6 @@ class FoodScreen: UIViewController {
 
     @IBOutlet weak var activeOrderList: PendingOrderList!
     @IBOutlet weak var foodCatergories: FoodCategoryList!
-    @IBOutlet weak var foodList: FoodList!
     @IBOutlet weak var cartItemCounter: UILabel!
     @IBOutlet weak var heightContraint: NSLayoutConstraint!
     @IBOutlet weak var orderBtn: RoundButton!
@@ -60,9 +59,9 @@ class FoodScreen: UIViewController {
                 self.imageStore.reference(withPath: "foods/\(document.documentID).jpg").getData(maxSize: 1 * 1024 * 1024, completion: {data,imageErr in
                     
                     if(imageErr != nil){
-                        print(imageErr)
+//                        print(imageErr)
                     }else{
-                        self.foodList.provideImage(index: index, newImage: UIImage(data: data!))
+//                        self.foodList.provideImage(index: index, newImage: UIImage(data: data!))
                     }
                 })
                 foodList.append(foodDetail)
@@ -70,7 +69,7 @@ class FoodScreen: UIViewController {
             if(catergory==nil){
                 self.foodCatergories.setData(catergories)
             }
-            self.foodList.updateData(foodList)
+//            self.foodList.updateData(foodList)
             })
     }
     
@@ -86,29 +85,30 @@ class FoodScreen: UIViewController {
         }
         activeOrderList.heightConstraint = heightContraint
         super.viewDidLoad()
-        foodList.onItemSelected = {selectedDetail in
-            let detailScreen = self.storyboard?.instantiateViewController(identifier: "foodDetailScreen") as! FoodDetailScreen
-            detailScreen.foodDetail = selectedDetail
-            detailScreen.onOrderedRecieved = {
-                self.activeOrderList.addOrder(foodDetail: selectedDetail)
-            }
-            self.navigationController?.pushViewController(detailScreen, animated: false)
-        }
-        foodCatergories.onCatergorySelected = {index,catergory in
-            self.loadData(catergory: index == 0 ? nil : catergory)
-        }
-        loadData(catergory: nil)
-    }
-    @IBAction func onSignOut(_ sender: Any) {
-        try? Auth.auth().signOut()
+//            let detailScreen = self.storyboard?.instantiateViewController(identifier: "foodDetailScreen") as! FoodDetailScreen
+//            detailScreen.foodDetail = selectedDetail
+//            detailScreen.onOrderedRecieved = {
+//                self.activeOrderList.addOrder(foodDetail: selectedDetail)
+//            }
+//            self.navigationController?.pushViewController(detailScreen, animated: false)
+//        }
+//        foodCatergories.onCatergorySelected = {index,catergory in
+//            self.loadData(catergory: index == 0 ? nil : catergory)
+//        }
+//        loadData(catergory: nil)
+//    }
+//    @IBAction func onSignOut(_ sender: Any) {
+//        try? Auth.auth().signOut()
        // let authenticateScreen = storyboard!.instantiateViewController(identifier: "authScreen")
-        print("user signed out")
-        let rootNavigator = navigationController?.tabBarController?.navigationController
-        let loginScreen = storyboard!.instantiateViewController(withIdentifier: "authScreen")
-        rootNavigator!.setViewControllers([loginScreen], animated: true)
+//        print("user signed out")
+//        let rootNavigator = navigationController?.tabBarController?.navigationController
+//        let loginScreen = storyboard!.instantiateViewController(withIdentifier: "authScreen")
+//        rootNavigator!.setViewControllers([loginScreen], animated: true)
        
-    }
+//    }
     
 
-
+    
+//}
+    }
 }

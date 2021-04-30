@@ -27,14 +27,14 @@
 		476F05CE25F4F37F00143508 /* FoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05CD25F4F37F00143508 /* FoodScreen.swift */; };
 		476F05D325F4F5F200143508 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05D225F4F5F200143508 /* FoodList.swift */; };
 		476F05E425F4F81C00143508 /* FoodCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05E325F4F81C00143508 /* FoodCategoryList.swift */; };
-		476F05E925F4F87200143508 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05E825F4F87200143508 /* FoodCategory.swift */; };
+		476F05E925F4F87200143508 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05E825F4F87200143508 /* FoodCategoryCell.swift */; };
 		476F05EE25F4FB9900143508 /* FoodSmallDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05ED25F4FB9900143508 /* FoodSmallDetail.swift */; };
 		476F05F325F5062700143508 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F05F225F5062700143508 /* SignUpViewController.swift */; };
 		476F060525F53A6400143508 /* DateFormattingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F060425F53A6400143508 /* DateFormattingScreen.swift */; };
 		476F060C25F53BDC00143508 /* PendingOrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F060B25F53BDC00143508 /* PendingOrderList.swift */; };
 		476F061125F53C7400143508 /* PendingOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F061025F53C7400143508 /* PendingOrder.swift */; };
 		476F061925F53EB000143508 /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F061825F53EB000143508 /* OrderListController.swift */; };
-		476F061E25F5409800143508 /* PendingOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F061D25F5409800143508 /* PendingOrder.swift */; };
+		476F061E25F5409800143508 /* PendingOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F061D25F5409800143508 /* PendingOrderCell.swift */; };
 		476F062325F5413300143508 /* Reciept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F062225F5413300143508 /* Reciept.swift */; };
 		476F062825F5418800143508 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F062725F5418800143508 /* OrderStatus.swift */; };
 		476F062D25F541E600143508 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F062C25F541E600143508 /* Order.swift */; };
@@ -86,14 +86,14 @@
 		476F05CD25F4F37F00143508 /* FoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodScreen.swift; sourceTree = "<group>"; };
 		476F05D225F4F5F200143508 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		476F05E325F4F81C00143508 /* FoodCategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryList.swift; sourceTree = "<group>"; };
-		476F05E825F4F87200143508 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		476F05E825F4F87200143508 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
 		476F05ED25F4FB9900143508 /* FoodSmallDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSmallDetail.swift; sourceTree = "<group>"; };
 		476F05F225F5062700143508 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		476F060425F53A6400143508 /* DateFormattingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormattingScreen.swift; sourceTree = "<group>"; };
 		476F060B25F53BDC00143508 /* PendingOrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOrderList.swift; sourceTree = "<group>"; };
 		476F061025F53C7400143508 /* PendingOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOrder.swift; sourceTree = "<group>"; };
 		476F061825F53EB000143508 /* OrderListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
-		476F061D25F5409800143508 /* PendingOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOrder.swift; sourceTree = "<group>"; };
+		476F061D25F5409800143508 /* PendingOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOrderCell.swift; sourceTree = "<group>"; };
 		476F062225F5413300143508 /* Reciept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reciept.swift; sourceTree = "<group>"; };
 		476F062725F5418800143508 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
 		476F062C25F541E600143508 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -168,11 +168,11 @@
 				476F05CD25F4F37F00143508 /* FoodScreen.swift */,
 				476F05D225F4F5F200143508 /* FoodList.swift */,
 				476F05E325F4F81C00143508 /* FoodCategoryList.swift */,
-				476F05E825F4F87200143508 /* FoodCategory.swift */,
+				476F05E825F4F87200143508 /* FoodCategoryCell.swift */,
 				476F05ED25F4FB9900143508 /* FoodSmallDetail.swift */,
 				476F060B25F53BDC00143508 /* PendingOrderList.swift */,
 				476F061825F53EB000143508 /* OrderListController.swift */,
-				476F061D25F5409800143508 /* PendingOrder.swift */,
+				476F061D25F5409800143508 /* PendingOrderCell.swift */,
 				476F062C25F541E600143508 /* Order.swift */,
 			);
 			path = "Cafe-NIBM";
@@ -422,7 +422,7 @@
 			files = (
 				476F05D325F4F5F200143508 /* FoodList.swift in Sources */,
 				476F05EE25F4FB9900143508 /* FoodSmallDetail.swift in Sources */,
-				476F061E25F5409800143508 /* PendingOrder.swift in Sources */,
+				476F061E25F5409800143508 /* PendingOrderCell.swift in Sources */,
 				476F061125F53C7400143508 /* PendingOrder.swift in Sources */,
 				476F05A525F4D30B00143508 /* LoginViewController.swift in Sources */,
 				476F060C25F53BDC00143508 /* PendingOrderList.swift in Sources */,
@@ -435,7 +435,7 @@
 				476F062D25F541E600143508 /* Order.swift in Sources */,
 				476F062825F5418800143508 /* OrderStatus.swift in Sources */,
 				476F062325F5413300143508 /* Reciept.swift in Sources */,
-				476F05E925F4F87200143508 /* FoodCategory.swift in Sources */,
+				476F05E925F4F87200143508 /* FoodCategoryCell.swift in Sources */,
 				476F048E25F343B500143508 /* AppDelegate.swift in Sources */,
 				476F05AA25F4D3C700143508 /* LocationViewController.swift in Sources */,
 				476F049825F343B500143508 /* Cafe_NIBM.xcdatamodeld in Sources */,

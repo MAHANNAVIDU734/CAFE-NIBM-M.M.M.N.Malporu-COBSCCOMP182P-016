@@ -41,7 +41,7 @@ class FoodCategoryList: UICollectionView,UICollectionViewDelegate,UICollectionVi
             self.onCatergorySelected?(indexPath.row,self.data[indexPath.row])
             //self.reloadItems(at: indexesToUpdate)
         }
-        return cell
+//        return cell
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

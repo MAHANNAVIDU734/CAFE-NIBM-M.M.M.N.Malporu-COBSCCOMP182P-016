@@ -17,7 +17,6 @@ class FoodDetailScreen: UIViewController {
     @IBOutlet weak var price: UILabel!
     
     @IBOutlet weak var foodDescription: UILabel!
-    
     @IBOutlet weak var promotion: UIPaddingLabel!
     var foodDetail:FoodDetail!
     var onOrderedRecieved : (()->Void)?
@@ -42,6 +41,7 @@ class FoodDetailScreen: UIViewController {
         onOrderedRecieved?()
         navigationController?.popViewController(animated: true)
     }
+    
     
 
 }

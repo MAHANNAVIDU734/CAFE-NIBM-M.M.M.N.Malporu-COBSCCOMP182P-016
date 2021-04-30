@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class FoodCategory: UICollectionView {
+class FoodCategoryCell: UICollectionView {
     @IBOutlet weak var bodyBtn: RoundButton!
     var userPressBtn:((UIButton)->Void)?
     @IBAction func onBtnPress(_ sender: UIButton) {

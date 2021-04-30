@@ -106,15 +106,13 @@ class OrderListController: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "orderDetail") as! OrderCell
-        cell.orderID.text = String(data[indexPath.row].orderID)
-        if(data[indexPath.row].status == 3){
-            cell.orderStatus.textColor = .green
-        }
-        cell.orderStatus.text = statusConstants[data[indexPath.row].status]
-        return cell
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        cell.orderID.text = String(data[indexPath.row].orderID)
+//        if(data[indexPath.row].status == 3){
+//            cell.orderStatus.textColor = .green
+//        }
+//        cell.orderStatus.text = statusConstants[data[indexPath.row].status]
+//        return cell
     }
     
 
-}
